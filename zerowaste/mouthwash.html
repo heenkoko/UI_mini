@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mouthwash</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,800;1,400&display=swap" rel="stylesheet">
+    <!-- font-family: 'Open Sans', sans-serif; -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+    <!-- font-family: 'Noto Sans KR', sans-serif; -->
+    <link rel="stylesheet" href="../css/sub_zerowaste.css">
+    <script src="../js/jquery-3.5.1.js"></script>
+</head>
+<body>
+    <div class="wrap">
+        <div id="header">
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../info.html">Info</a></li>
+                <li><a href="../roadmap.html">Roadmap</a></li>
+                <li><a href="../zerowaste.html">Zero Waste</a></li>
+                <li style="float: right;"><a href="../signin.html">Sign in</a></li>
+            </ul>
+        </div>
+
+        <div id="language">
+            <a href="#" id="korean"><img src="../images/korean.png" alt="korean" ></a>
+            <a href="#" id="english"><img src="../images/english.png" alt="english" ></a>
+        </div>
+
+        <div id="section">
+            <div id="eng">
+                <br><br><br><br>
+                <p class="header">Homemade antibacterial mouthwash</p>
+                <br>
+                <img src="../images/mouthwash.jpg" alt="mouthwash">
+                <br><br>
+                <div class="recipe">
+                    <p class="title">Antibacterial Mouthwash</p>
+                    <p>Only takes 1-2 mins to make.</p>
+                    <p style="letter-spacing: 1px;">Ingredients</p>
+                    <ul class="ingredient">
+                        <li>1 cup (240 ml) water, boiled and cooled down</li>
+                        <li>1 tsp baking soda</li>
+                        <li>5 drops (pepper-)mint essential oil</li>
+                        <li>5 drops tee tree essential oil</li>
+                        <li>Optional: 1 tsp xylitol</li>
+                    </ul>
+                    <p style="letter-spacing: 1px;">Instructions</p>   
+                    <p>Put everything in a jar or a bottle. Shake before each use. Swish 1 tablespoon (15 ml) around your mouth for 1 to 2 minutes.</p>
+                    <p>Please note that this mouth wash does not contain any preservatives! I try to remember to use the mouth wash every time I brush my teeth, and I make a new batch very 8 – 10 days or so.</p>
+                </div>
+            </div>
+            <div id="kor">
+                <br><br><br><br>
+                <p class="header">홈메이드 항균 구강세정제</p>
+                <br>
+                <img src="../images/mouthwash.jpg" alt="mouthwash">
+                <br><br>
+                <div class="recipe">
+                    <p class="title">항균 구강 세정제</p>
+                    <p>만드는 데 1~2분밖에 걸리지 않습니다.</p>
+                    <p style="letter-spacing: 1px;">재료</p>
+                    <ul class="ingredient">
+                        <li>끓인 후 식힌 물 1컵(240ml)</li>
+                        <li>베이킹 소다 1티스푼</li>
+                        <li>민트 에센셜 오일 5방울</li>
+                        <li>티트리 에센셜 오일 5방울</li>
+                        <li>선택: 자일리톤 1티스푼</li>
+                    </ul>
+                    <br><br>
+                    <p style="letter-spacing: 1px;">사용방법</p>   
+                    <p>모든 재료를 병에 담으세요. 사용하기 전 흔들어 주세요. 1큰술(15ml)을 1~2분정도 가글해줍니다.</p>
+                    <p>홈메이드 가글은 방부제가 들어 있지 않다는 점에 유의하세요! 이를 닦을 때마다 구강 세정제를 사용하고, 8~10일 정도 후 새로운 가글을 만드세요.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        $(function () {
+            $('#english').on('click',function(){
+                $('#kor').css('display', 'none');
+                $('#eng').css('display', 'block');
+            });
+            $('#korean').on('click',function(){
+                $('#eng').css('display', 'none');
+                $('#kor').css('display', 'block');
+            });
+        })
+    </script>
+</body>
+</html>

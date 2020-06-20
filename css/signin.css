@@ -1,0 +1,122 @@
+body, html{
+    margin: 0;
+}
+ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+a{
+    text-decoration: none;
+}
+div{
+    /* border:1px solid red; */
+    box-sizing:border-box;
+}
+.wrap{
+    width:1024px;
+    height: 768px;
+    margin:0 auto;
+}
+.wrap>div{
+    width: 100%;
+}
+#header{
+    height: 10%;
+    width: 1024px;
+    border-bottom: 1px solid lightgray;
+}
+#main{
+    height: 90%;
+    width: 100%;
+}
+/*header*/
+#header li{
+    float: left;
+    padding-top: 31px;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+#header a{
+    font-family: 'Open Sans', sans-serif; 
+    font-size: 19px;
+    font-style: italic;
+    color: rgb(17, 17, 17);
+}
+#header a:hover{
+    text-decoration: underline;
+}
+/* main */
+#idField{
+    margin-top: 14%;
+}
+#bottom{
+    width: 100%;
+    height: 12%;
+    margin-top: 9%;
+}
+#usingSNS{
+    border: 5px solid black;
+}
+#usingSNS>div{
+    float: left;
+    width: 50%;
+    height: 100%;
+    background-size: 200% 100%;
+    transition: background-position 1s;
+}
+#facebook{
+    background-image: linear-gradient(to right, white 50%, #4267B2 50%);
+}
+#google{
+    background-image: linear-gradient(to right, white 50%, #EA4335 50%);
+}
+#usingSNS img{
+    height: 80%;
+    margin: 7% 21%;
+}
+#usingFacebook, #usingGoogle{
+    width: 78%;
+    height: 100%;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 800;
+    font-size: 19px;
+    margin-top: 4%;
+    padding-left: 4%;
+    
+}
+#findPassword>a, #signup>a{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 800;
+    color: black;
+}
+#findPassword>a{
+    float: right;
+}
+#findPassword>a:hover, #signup>a:hover{
+    text-decoration: underline;
+}
+#bottom>div{
+    float: left;
+}
+#signup{
+    height: 100%;
+    width: 33%;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    padding: 3% 1%;
+}
+#login{
+    height: 100%;
+    width: 18%;
+    background-color: black;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 800;
+    font-size: 30px;
+    color: white;
+    padding: 2% 3.5%;
+}
+#facebook:hover, #google:hover{
+    background-position: -100% 0;
+    cursor: pointer;
+}

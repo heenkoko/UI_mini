@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find Password</title>
+     <!-- font-family: 'Open Sans', sans-serif; -->
+     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+     <!-- font-family: 'Noto Sans KR', sans-serif; -->
+     <script src="../js/jquery-3.5.1.js"></script>
+     <link rel="stylesheet" href="css/forgotPW.css">
+     <!-- emailjs -->
+     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.3.2/dist/email.min.js"></script>
+     <script type="text/javascript">
+        (function(){
+           emailjs.init("user_uCcAEh3aC1dYy8J6Tsf4v");
+        })();
+     </script>
+</head>
+<body>
+    <div class="wrap">
+        <div id="header">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="info.html">Info</a></li>
+                <li><a href="roadmap.html">Roadmap</a></li>
+                <li><a href="zerowaste.html">Zero Waste</a></li>
+                <li style="float: right;"><a href="signin.html">Sign in</a></li>
+            </ul>
+        </div>
+
+        <div id="main">
+            <div style="font-weight: 800; font-size: 32px;">Forgot Password?</div>
+            <div id="inputField">
+                <label for="email">EMAIL</label>
+                <input type="text" name="email" id="email" dir="rtl" required autocomplete="off">
+            </div>
+            <div style="font-size: 16px; color:gray; margin-bottom: 22%;">Enter your email address, and we'll send you your id & password</div>
+            <input type="button" id="send" style="float: right;" value="SEND" onclick="send();">
+        </div>
+    </div>
+    <script src="js/forgotPW.js"></script>
+</body>
+</html>

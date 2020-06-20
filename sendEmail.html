@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Done</title>
+    <!-- font-family: 'Open Sans', sans-serif; -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+    <!-- font-family: 'Noto Sans KR', sans-serif; -->
+    <script src="../js/jquery-3.5.1.js"></script>
+    <link rel="stylesheet" href="css/sendEmail.css">
+</head>
+<body>
+    <div class="wrap">
+        <div id="header">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="info.html">Info</a></li>
+                <li><a href="roadmap.html">Roadmap</a></li>
+                <li><a href="zerowaste.html">Zero Waste</a></li>
+                <li style="float: right;"><a href="signin.html">Sign in</a></li>
+            </ul>
+        </div>
+
+        <div id="main">
+            <div style="font-weight: 800; font-size: 32px;">Done</div>
+            <div id="inputField"></div>
+            <img src="images/plane.png" alt="plane">
+            <div style="font-size: 16px; color:gray; margin-bottom: 22%;">Check your email and log in again</div>
+            <input type="button" id="send" style="float: right;" value="GOT IT" onclick="gotit();">
+        </div>
+    </div>
+    <script>
+        $(function () {
+            $('img').animate({
+                'margin-left': '33%',
+                'margin-top': '-20%'
+            });
+        })
+
+        function gotit() {
+            location.href = 'signin.html';
+        }
+    </script>
+</body>
+</html>

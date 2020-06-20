@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,800;1,400&display=swap" rel="stylesheet">
+    <!-- font-family: 'Open Sans', sans-serif; -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+    <!-- font-family: 'Noto Sans KR', sans-serif; -->
+    <script src="../js/jquery-3.5.1.js"></script>
+    <link rel="stylesheet" href="css/member.css">
+    <title>Member List</title>
+</head>
+<body>
+    <div class="wrap">
+        <div id="header">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="info.html">Info</a></li>
+                <li><a href="roadmap.html">Roadmap</a></li>
+                <li><a href="zerowaste.html">Zero Waste</a></li>
+                <li style="float: right;"><a href="signin.html">Sign in</a></li>
+            </ul>
+        </div>
+        <div id="main">
+            <div id="title">Member list</div>
+            <div id="line"></div>
+            <div id="table">
+                <table>
+                    <tr>
+                        <th>Id</th><th>Name</th><th>Tel</th><th>Mobile</th><th>E-mail</th><th>Birthday</th><th>Join date</th>
+                    </tr>
+                </table>
+            </div>
+            <br><br><br><br><br>
+        </div>
+    </div>
+    <script>
+        $(function () {
+            getMemberList();
+        });
+
+        function getMemberList() {
+            let memberList = JSON.parse(localStorage.getItem('memberList'));
+            $(memberList).each(function (i, member) {
+                let date = new Date(member.date);
+                let html = '<tr>'
+                            +'<td>'+member.id+'</td>'
+                            +'<td>'+member.name+'</td>'
+                            +'<td>'+member.tel+'</td>'
+                            +'<td>'+member.mobile+'</td>'
+                            +'<td>'+member.email+'</td>'
+                            +'<td>'+member.birthday+'</td>'
+                            +'<td>'+date.getFullYear()+'년 '+date.getMonth()+'월 '+date.getDate()+'일'+'</td>';
+                $('table').append(html);
+            })
+        }
+    </script>
+</body>
+</html>

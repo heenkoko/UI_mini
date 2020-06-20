@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,800;1,400&display=swap" rel="stylesheet">
+    <!-- font-family: 'Open Sans', sans-serif; -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+    <!-- font-family: 'Noto Sans KR', sans-serif; -->
+    <script src="../js/jquery-3.5.1.js"></script>
+    <link rel="stylesheet" href="css/signin.css">
+    <title>Signin</title>
+</head>
+<body>
+    <div class="wrap">
+        <div id="header">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="info.html">Info</a></li>
+                <li><a href="roadmap.html">Roadmap</a></li>
+                <li><a href="zerowaste.html">Zero Waste</a></li>
+                <li style="float: right;"><a href="signin.html">Sign in</a></li>
+            </ul>
+        </div>
+        
+        <div id="main">
+            <div id="idField">
+                <label for="id">ID</label>
+                <input type="text" name="id" id="id" dir="rtl" required>
+            </div>
+            <div id="passwordField">
+                <label for="password">PASSWORD</label>
+                <input type="password" name="password" id="password" dir="rtl" required>
+            </div>
+            <div id="usingSNS">
+                <div id="facebook" style="border-right: 5px solid black;">
+                    <div id="facebookIcon">
+                        <img src="images/facebook.png" alt="facebook">
+                    </div>
+                    <div id="usingFacebook">USING FACEBOOK</div>
+                </div>
+                <div id="google">
+                    <div id="googleIcon">
+                        <img src="images/google.png" alt="google">
+                    </div>
+                    <div id="usingGoogle">USING GOOGLE</div>
+                </div>
+            </div>
+            <div id="findPassword">
+                <a href="forgotPW.html">Forgot Password?</a>
+            </div>
+            <div id="bottom">
+                <div id="signup">
+                    Don't have an account? <a href="signup.html">SIGN UP</a>
+                </div>
+                <input type="button" id="login" style="float: right;" value="LOG IN" onclick="login();">
+            </div>
+        </div>
+    </div>
+    <script src="js/signin.js"></script>
+</body>
+</html>
