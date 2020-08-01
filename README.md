@@ -24,11 +24,9 @@ HTML, CSS, Java Script, JQuery를 이용하여 화면 설계
 
 - **ZERO WASTE:** *관심사 소개*
 
-<div style="position: inline-block;">
-<img src="https://user-images.githubusercontent.com/61354985/89023980-5fc01880-d35f-11ea-9c82-7366f032fd10.jpg" width="50%"/>
-<img src="https://user-images.githubusercontent.com/61354985/89023982-6058af00-d35f-11ea-9ad9-0be94ce67b4b.jpg" width="50%"/>
-</div>
+![https://user-images.githubusercontent.com/61354985/89023980-5fc01880-d35f-11ea-9c82-7366f032fd10.jpg](https://user-images.githubusercontent.com/61354985/89023980-5fc01880-d35f-11ea-9c82-7366f032fd10.jpg)
 
+![https://user-images.githubusercontent.com/61354985/89023982-6058af00-d35f-11ea-9ad9-0be94ce67b4b.jpg](https://user-images.githubusercontent.com/61354985/89023982-6058af00-d35f-11ea-9ad9-0be94ce67b4b.jpg)
 
 - **SIGN IN:** *로그인 페이지*
     - 로그인
