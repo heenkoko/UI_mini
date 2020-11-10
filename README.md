@@ -20,6 +20,7 @@
 <br/>
 
 ## Usage
+[Click here to watch video](https://vimeo.com/469751197)
 
 ![https://user-images.githubusercontent.com/61354985/89023975-5e8eeb80-d35f-11ea-9942-4df698cc8f9f.jpg](https://user-images.githubusercontent.com/61354985/89023975-5e8eeb80-d35f-11ea-9942-4df698cc8f9f.jpg)
 
